@@ -5,6 +5,10 @@ from typing import Callable
 from data_utils import Movie
 from retrieval.indexing_pipeline_utils import get_synopsys_txt
 from retrieval.retrieval_pipeline_utils import clean_query_txt
+from transformers import AutoTokenizer, AutoModel
+
+tokenizer = AutoTokenizer.from_pretrained(model_name)
+model = AutoModel.from_pretrained(model_name)
 
 # retrieval/config.py
 
