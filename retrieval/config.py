@@ -15,6 +15,9 @@ class RetrievalExpsConfig:
     Nota: cuando definimos atributos de tipo Callable, debemos usar `staticmethod` para que la función pueda ser llamada
     s
     """
+    # retrieval/config.py
+    
+    _text_to_embed_fn = 'retrieval.indexing_pipeline_utils.get_synopsys_txt'
 
     def __init__(self):
 
