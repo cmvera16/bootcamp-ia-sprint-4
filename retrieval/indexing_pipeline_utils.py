@@ -22,6 +22,15 @@ def create_docs_to_embedd(movies: list[Movie], config: config.RetrievalExpsConfi
 
 
 ## Posibles funciones para usar como `text_to_embed_fn` en `RetrievalExpsConfig` ##
+# retrieval/indexing_pipeline_utils.py
+
+def get_synopsys_txt(movie):
+    """
+    Esta función toma un objeto 'Movie' y devuelve un texto con la sinopsis
+    de la película. Este texto se usará para generar el embedding.
+    """
+    # Suponiendo que 'movie' tiene un atributo 'synopsis' con la sinopsis de la película
+    return movie.synopsis
 
 
 def get_synopsys_txt(movie: Movie) -> str:
