@@ -7,10 +7,10 @@ from retrieval.indexing_pipeline_utils import get_synopsys_txt
 from retrieval.retrieval_pipeline_utils import clean_query_txt
 
 # retrieval/config.py
-   
+
 _text_to_embed_fn = 'retrieval.indexing_pipeline_utils.get_synopsys_txt'
 model_name = 'all-MiniLM-L12-v2'
-
+_query_prepro_fn = 'retrieval.retrieval_pipeline_utils.clean_query_txt'
 class RetrievalExpsConfig:
     """
     Class to keep track of all the parameters used in the embeddings experiments.
