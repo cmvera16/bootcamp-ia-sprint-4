@@ -6,6 +6,10 @@ from data_utils import Movie
 from retrieval.indexing_pipeline_utils import get_synopsys_txt
 from retrieval.retrieval_pipeline_utils import clean_query_txt
 
+# retrieval/config.py
+   
+_text_to_embed_fn = 'retrieval.indexing_pipeline_utils.get_synopsys_txt'
+model_name = 'all-MiniLM-L12-v2'
 
 class RetrievalExpsConfig:
     """
@@ -15,9 +19,7 @@ class RetrievalExpsConfig:
     Nota: cuando definimos atributos de tipo Callable, debemos usar `staticmethod` para que la función pueda ser llamada
     s
     """
-    # retrieval/config.py
-    
-    _text_to_embed_fn = 'retrieval.indexing_pipeline_utils.get_synopsys_txt'
+ 
 
     def __init__(self):
 
